@@ -1,0 +1,25 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* títulos */
+h1, h2, h3 {
+  margin-bottom: var(--space-md);
+}
+
+/* botones base */
+button {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  background: var(--primary);
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,31 @@
+name,email,password,businessName,CIF,address,role
+Juan,juan@test.com,123456,Restaurante Juan,B12345678,Calle Falsa 123,client
+Maria,maria@test.com,123456,Tienda Maria,B87654321,Calle Real 45,client
+Admin,admin@test.com,admin123,Fruteria Central,B00000000,Avenida Principal,admin
+Carlos,carlos1@test.com,123456,Panaderia Carlos,B12345679,Calle Luna 12,client
+Lucia,lucia1@test.com,123456,Heladeria Lucia,B12345680,Calle Sol 7,client
+Miguel,miguel1@test.com,123456,Cafeteria Miguel,B12345681,Calle Estrella 3,client
+Ana,ana1@test.com,123456,Tienda Ana,B12345682,Calle Mar 22,client
+David,david1@test.com,123456,Restaurante David,B12345683,Calle Rio 55,client
+Laura,laura1@test.com,123456,Papeleria Laura,B12345684,Calle Campo 9,client
+Jose,jose1@test.com,123456,Farmacia Jose,B12345685,Calle Monte 18,client
+Elena,elena1@test.com,123456,Libreria Elena,B12345686,Calle Jardín 11,client
+Sergio,sergio1@test.com,123456,Floristeria Sergio,B12345687,Calle Cielo 6,client
+Isabel,isabel1@test.com,123456,Pasteleria Isabel,B12345688,Calle Loma 20,client
+Pablo,pablo1@test.com,123456,Restaurante Pablo,B12345689,Calle Viento 33,client
+Marta,marta1@test.com,123456,Tienda Marta,B12345690,Calle Nube 4,client
+Raul,raul1@test.com,123456,Panaderia Raul,B12345691,Calle Arena 8,client
+Sofia,sofia1@test.com,123456,Heladeria Sofia,B12345692,Calle Agua 15,client
+Victor,victor1@test.com,123456,Cafeteria Victor,B12345693,Calle Bosque 27,client
+Carla,carla1@test.com,123456,Tienda Carla,B12345694,Calle Piedra 30,client
+Andres,andres1@test.com,123456,Restaurante Andres,B12345695,Calle Sol 14,client
+Laura,laura2@test.com,123456,Papeleria Laura B,B12345696,Calle Luna 19,client
+Diego,diego1@test.com,123456,Libreria Diego,B12345697,Calle Nieve 21,client
+Cristina,cristina1@test.com,123456,Floristeria Cristina,B12345698,Calle Trébol 17,client
+Javier,javier1@test.com,123456,Pasteleria Javier,B12345699,Calle Roble 5,client
+Paula,paula1@test.com,123456,Restaurante Paula,B12345700,Calle Olmo 12,client
+Fernando,fernando1@test.com,123456,Tienda Fernando,B12345701,Calle Lirio 2,client
+Raquel,raquel1@test.com,123456,Panaderia Raquel,B12345702,Calle Cedro 33,client
+Alberto,alberto1@test.com,123456,Heladeria Alberto,B12345703,Calle Sauce 7,client
+Veronica,veronica1@test.com,123456,Cafeteria Veronica,B12345704,Calle Pino 9,client
+Mario,mario1@test.com,123456,Tienda Mario,B12345705,Calle Oliva 11,client

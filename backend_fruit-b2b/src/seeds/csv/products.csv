@@ -1,0 +1,50 @@
+name,price,category,stock,isSeasonal,minOrderQuantity,image,unit
+Manzana Roja,1.5,Fruta,100,true,10,https://images.unsplash.com/photo-1630563451961-ac2ff27616ab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Platano,1.2,Fruta,150,false,10,https://images.unsplash.com/photo-1542062837-627a059e547f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBsYXRhbm98ZW58MHx8MHx8fDA%3D,kg
+Naranja Valencia,1.8,Fruta,120,true,10,https://plus.unsplash.com/premium_photo-1724255955839-d3e393497283?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hcmFuamF8ZW58MHx8MHx8fDA%3D,kg
+Pera Conferencia,2.0,Fruta,80,true,5,https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyYXxlbnwwfHwwfHx8MA%3D%3D,kg
+Fresa,2.5,Fruta,50,true,5,https://plus.unsplash.com/premium_photo-1724256149016-05c013fe058e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Cereza,3.0,Fruta,40,true,5,https://images.unsplash.com/photo-1528821128474-27f963b062bf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Melón,2.8,Fruta,60,true,5,https://images.unsplash.com/photo-1615485290690-285a539321e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1lbG9ufGVufDB8fDB8fHww,unidad/es
+Sandía,3.5,Fruta,30,true,5,https://images.unsplash.com/photo-1581074817932-af423ba4566e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJtZWxvbnxlbnwwfHwwfHx8MA%3D%3D,unidad/es
+Uva Negra,2.2,Fruta,70,true,5,https://images.unsplash.com/photo-1698305819486-ecca56daaba3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dXZhfGVufDB8fDB8fHww,kg
+Kiwi,1.9,Fruta,90,false,5,https://images.unsplash.com/photo-1662303645991-185042acc773?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGtpd2l8ZW58MHx8MHx8fDA%3D,kg
+Lechuga,1.0,Verdura,200,false,10,https://images.unsplash.com/photo-1640958904159-51ae08bd3412?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGV0dHVjZXxlbnwwfHwwfHx8MA%3D%3D,kg
+Tomate,1.3,Verdura,180,false,10,https://images.unsplash.com/photo-1564874997803-e4d589d5fd41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9tYXRvfGVufDB8fDB8fHww,kg
+Pepino,1.1,Verdura,160,false,10,https://images.unsplash.com/photo-1587411768638-ec71f8e33b78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVwaW5vfGVufDB8fDB8fHww,kg
+Zanahoria,0.9,Verdura,150,false,10,https://plus.unsplash.com/premium_photo-1724849305142-498abc1f7b89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8emFuYWhvcmlhfGVufDB8fDB8fHww,kg
+Pimiento Rojo,1.7,Verdura,120,false,5,https://plus.unsplash.com/premium_photo-1724256106844-890e02d860a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGltaWVudG8lMjByb2pvfGVufDB8fDB8fHww,kg
+Calabacín,1.4,Verdura,130,false,5,https://images.unsplash.com/photo-1691480291894-75229c2bfd44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FsYWJhYyVDMyVBRG58ZW58MHx8MHx8fDA%3D,kg
+Berenjena,1.6,Verdura,90,false,5,https://images.unsplash.com/photo-1615484477201-9f4953340fab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVyZW5qZW5hfGVufDB8fDB8fHww,kg
+Cebolla,0.8,Verdura,200,false,10,https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Vib2xsYXxlbnwwfHwwfHx8MA%3D%3D,kg
+Ajo,0.5,Verdura,250,false,10,https://images.unsplash.com/photo-1636210589096-a53d5dacd702?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWpvfGVufDB8fDB8fHww,kg
+Espárragos,2.9,Verdura,50,true,5,https://images.unsplash.com/photo-1595855759920-86582396756a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXNwYXJyYWdvfGVufDB8fDB8fHww,kg
+Leche Entera,0.9,Lácteo,300,false,10,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0WCDtl5_T3QNVwgzig_5szYbpmdPguma49A&s,l
+Queso Manchego,3.5,Lácteo,100,false,5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL65Y9boltgVXsK5fvyOrBW7HcS1x3X5v7TA&s,kg
+Nata,1.8,Lácteo,60,false,5,https://plus.unsplash.com/premium_photo-1723759365132-af57124362b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,l
+Huevos,2.5,Lácteo,180,false,12,https://images.unsplash.com/photo-1587486913049-53fc88980cfc?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Pan Integral,1.2,Panadería,150,false,5,https://images.unsplash.com/photo-1719678518355-67b1ceca6df8?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Pan Blanco,1.0,Panadería,200,false,5,https://images.unsplash.com/photo-1598373182308-3270495d2f58?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Croissant,1.5,Panadería,100,false,5,https://images.unsplash.com/photo-1587912001191-0cd4f14fd89e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Bollería Variada,2.0,Panadería,80,false,5,https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Galletas,1.8,Panadería,120,false,5,https://plus.unsplash.com/premium_photo-1668772704254-c4c4798b0e5d?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Arroz,0.9,Cereal,300,false,10,https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Pasta,1.1,Cereal,250,false,10,https://images.unsplash.com/photo-1598720290281-9f26ae6d6f81?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Avena,1.3,Cereal,200,false,10,https://images.unsplash.com/photo-1586810504230-09dab6b8e01b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Harina,0.8,Cereal,180,false,10,https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Azúcar,0.7,Cereal,220,false,10,https://images.unsplash.com/photo-1709651808265-977ed7ef78c6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Sal,0.5,Cereal,250,false,10,https://images.unsplash.com/photo-1634612831148-03a8550e1d52?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Aceite de Oliva,3.2,Condimento,100,false,5,https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=718&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Vinagre,1.5,Condimento,150,false,5,https://images.unsplash.com/photo-1733336748576-82854570ef01?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,l
+Miel,3.0,Condimento,80,true,5,https://images.unsplash.com/photo-1536788567643-8c2368376526?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Mostaza,1.8,Condimento,120,false,5,https://images.unsplash.com/photo-1641999165327-2e596e21d71c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,unidad/es
+Ketchup,1.6,Condimento,140,false,5,https://images.unsplash.com/photo-1569790554690-1c0877b2fc6c?q=80&w=1187&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,unidad/es
+Chocolate Negro,2.5,Dulce,100,false,5,https://images.unsplash.com/photo-1613669146965-507d0e72a688?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Chocolate con Leche,2.3,Dulce,120,false,5,https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Caramelos,1.2,Dulce,150,false,5,https://plus.unsplash.com/premium_photo-1663853120656-82f3842928f4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Golosinas,1.0,Dulce,200,false,5,https://images.unsplash.com/photo-1576712967455-c8d22580e9be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Chicles,0.8,Dulce,180,false,5,https://images.unsplash.com/photo-1629431136420-23bbe56141a5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,caja/s
+Café Molido,3.0,Bebida,100,false,5,https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1061&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Té Verde,2.0,Bebida,120,false,5,https://plus.unsplash.com/premium_photo-1694825173868-ed003c071068?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,kg
+Zumo Naranja,1.5,Bebida,150,false,10,https://images.unsplash.com/photo-1577680716097-9a565ddc2007?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,l
+Agua Mineral,0.5,Bebida,300,false,10,https://images.unsplash.com/photo-1616118132534-381148898bb4?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,l

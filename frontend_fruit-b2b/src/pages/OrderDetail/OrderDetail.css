@@ -1,0 +1,89 @@
+.order-detail {
+  max-width: 800px;
+  margin: auto;
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* BACK BUTTON */
+.back-button {
+  margin-bottom: var(--space-md);
+  background: transparent;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* HEADER */
+.order-header {
+  margin-bottom: var(--space-md);
+}
+
+.order-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.order-status {
+  margin-top: 4px;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  gap: 10px;
+  margin: var(--space-md) 0;
+}
+
+.timeline-step {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  background: #e0e0e0;
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.timeline-step.active {
+  background: var(--primary);
+  color: white;
+}
+
+/* PRODUCTS */
+.products {
+  margin-top: var(--space-md);
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.product-name {
+  flex: 2;
+}
+
+.product-qty {
+  flex: 1;
+  text-align: center;
+}
+
+.product-price {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* TOTAL */
+.order-total {
+  margin-top: var(--space-lg);
+  text-align: right;
+  border-top: 2px solid #eee;
+  padding-top: var(--space-md);
+}
