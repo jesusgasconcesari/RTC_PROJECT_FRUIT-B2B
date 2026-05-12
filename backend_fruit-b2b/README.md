@@ -1,6 +1,6 @@
-# 📦 Backend - Frutería B2B API
+#  Backend - Fruit B2B API
 
-## 📖 Descripción
+##  Descripción
 
 Este es el backend de una aplicación web B2B para la gestión de una frutería. Permite la administración de usuarios empresariales, productos y pedidos, con control de roles y autenticación segura mediante JWT.
 
@@ -8,7 +8,7 @@ La API está construida siguiendo una arquitectura REST y permite la gestión co
 
 ---
 
-## 🧰 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - Node.js
 - Express.js
@@ -19,7 +19,7 @@ La API está construida siguiendo una arquitectura REST y permite la gestión co
 
 ---
 
-## 🏗️ Arquitectura del proyecto
+##  Arquitectura del proyecto
 
 El proyecto sigue una estructura modular basada en:
 
@@ -30,9 +30,9 @@ El proyecto sigue una estructura modular basada en:
 
 ---
 
-## 📊 Modelos de datos
+##  Modelos de datos
 
-### 👤 User
+###  User
 - name
 - email
 - password
@@ -44,7 +44,7 @@ El proyecto sigue una estructura modular basada en:
 
 ---
 
-### 🍎 Product
+###  Product
 - name
 - price
 - category
@@ -57,7 +57,7 @@ El proyecto sigue una estructura modular basada en:
 
 ---
 
-### 📦 Order
+###  Order
 - user (referencia)
 - products:
   - product
@@ -69,7 +69,7 @@ El proyecto sigue una estructura modular basada en:
 
 ---
 
-## 🔐 Autenticación y roles
+##  Autenticación y roles
 
 El sistema utiliza JWT para la autenticación.
 
@@ -83,15 +83,15 @@ El sistema utiliza JWT para la autenticación.
 
 ---
 
-## 📡 Endpoints principales
+##  Endpoints principales
 
-### 🔐 Auth
+###  Auth
 - `POST /auth/register` → Registro de usuario
 - `POST /auth/login` → Login
 
 ---
 
-### 👤 Users 
+###  Users 
 - `GET /admin/users` → Obtener todos los usuarios
 - `GET /admin/users/:id` → Obtener usuario por ID
 - `PUT /admin/users/:id` → Actualizar usuario
@@ -99,7 +99,7 @@ El sistema utiliza JWT para la autenticación.
 
 ---
 
-### 🍎 Products
+###  Products
 - `GET /products` → Obtener todos los productos
 - `GET /products/:id` → Obtener producto por ID
 - `POST /admin/products` → Crear producto 
@@ -108,7 +108,7 @@ El sistema utiliza JWT para la autenticación.
 
 ---
 
-### 📦 Orders
+###  Orders
 - `POST /orders` → Crear pedido
 - `GET /orders/my-orders` → Obtener pedidos del usuario
 - `GET /admin/orders` → Obtener todos los pedidos 
@@ -117,7 +117,7 @@ El sistema utiliza JWT para la autenticación.
 
 ---
 
-## ⚙️ Instalación y ejecución
+##  Instalación y ejecución
 
 ```bash
 npm install
