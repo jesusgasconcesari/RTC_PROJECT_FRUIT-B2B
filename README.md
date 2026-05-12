@@ -1,81 +1,100 @@
-# 🍎 Fruit B2B
+<!-- # 🥬 Fruit B2B - Full Stack Web Application
 
-Plataforma B2B para la compra y gestión de productos frescos al por mayor.
-Pensada para negocios que necesitan abastecerse de forma rápida, sencilla y fiable.
+## 📖 Descripción
 
----
+Este proyecto es una aplicación web full stack desarrollada como proyecto final del programa **Rock{TheCode}**. Se trata de una plataforma B2B para la gestión de una frutería, donde empresas pueden registrarse, comprar productos, gestionar pedidos y realizar seguimiento del estado de sus compras.
 
-
-## ✨ Funcionalidades
-
-### 👤 Autenticación
-
-* Registro de usuarios (empresas)
-* Login con JWT
-* Control de roles (cliente / admin)
-
-### 🛒 Catálogo
-
-* Listado de productos
-* Búsqueda y filtrado por categoría
-* Productos con pedido mínimo
-
-### 🧺 Carrito
-
-* Añadir/eliminar productos
-* Modificar cantidades
-* Cálculo automático del total
-
-### 📦 Pedidos
-
-* Crear pedidos
-* Ver historial de pedidos
-* Ver detalle de cada pedido
-
-### 🛠️ Panel Admin
-
-* CRUD de productos
-* Gestión de stock
-* Gestión de pedidos (status: pending, shipped, delivered, etc.)
-
-### 🌱 Extras UX/UI
-
-* Hero section tipo marketplace
-* Productos de temporada
-* Diseño responsive
-* Feedback visual en acciones
+Incluye un sistema completo de administración para gestionar productos, usuarios y pedidos.
 
 ---
 
-## 🧱 Estructura del proyecto
+## 🎯 Objetivo del proyecto
 
-```bash
-RTC_PROJECT_FRUIT-B2B/
-├── backend_fruit-b2b/   # API REST (Node.js, Express, MongoDB)
-├── frontend_fruit-b2b/  # Cliente (React + Vite)
-```
+El objetivo principal es simular una aplicación real de comercio B2B, aplicando una arquitectura full stack moderna con autenticación, gestión de roles y operaciones CRUD completas.
 
 ---
 
-## ⚙️ Tecnologías
+## 🧰 Stack tecnológico
 
 ### Frontend
-
-* React
-* React Router
-* Context API
-* CSS modular
+- React
+- Vite
+- JavaScript
+- CSS modular
+- Context API
+- React Router
 
 ### Backend
-
-* Node.js
-* Express
-* MongoDB + Mongoose
-* JWT (autenticación)
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JWT (autenticación)
+- Bcrypt
 
 ---
 
-## 👨‍💻 Autor
+## 🏗️ Estructura del proyecto
 
-Desarrollado por Jesús Gascón Cesari
+El proyecto está dividido en dos carpetas principales:
 
+/frontend_fruit-b2b → Aplicación cliente (React)
+/backend_fruit-b2b → API REST (Node.js + Express + MongoDB)
+
+---
+
+## 🚀 Funcionalidades
+
+### 👤 Autenticación
+- Registro de usuarios B2B
+- Login con JWT
+- Protección de rutas
+- Roles: usuario / administrador
+
+---
+
+### 🛒 Usuario B2B
+- Visualización de catálogo de productos
+- Búsqueda y filtros
+- Añadir productos al carrito
+- Gestión del carrito (cantidades, eliminación)
+- Realización de pedidos
+- Seguimiento de pedidos
+- Detalle de cada pedido
+
+---
+
+### 🛠️ Panel de administración
+- Gestión de productos (CRUD completo)
+- Gestión de usuarios (CRUD completo)
+- Gestión de pedidos:
+  - Ver pedidos
+  - Ver detalle
+  - Cambiar estado del pedido
+
+---
+
+## 🧱 Arquitectura
+
+- Frontend basado en componentes reutilizables + Context API
+- Backend con arquitectura MVC (Models / Controllers / Routes)
+- API REST para comunicación frontend-backend
+- Autenticación con JWT
+- Control de acceso basado en roles
+
+---
+
+## 🌐 Deploy
+
+- Frontend: *(pendiente de despliegue)*
+- Backend: *(pendiente de despliegue)*
+
+---
+
+
+## ⚙️ Instalación y ejecución
+
+### Backend
+```bash
+cd backend
+npm install
+npm run dev

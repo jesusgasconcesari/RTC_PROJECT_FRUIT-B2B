@@ -12,7 +12,6 @@ const AdminProducts = () => {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
 
-  const [showForm, setShowForm] = useState(false);
   const [editingProduct, setEditingProduct] = useState(null);
 
   const [form, setForm] = useState({
@@ -21,11 +20,14 @@ const AdminProducts = () => {
     stock: "",
     category: "",
     minOrderQuantity: "",
-    unit: ""
+    unit: "",
+    image: ""
   });
 
   const [stockModal, setStockModal] = useState(null);
   const [stockAmount, setStockAmount] = useState("");
+
+  const[editModal, setEditModal] = useState(false);
 
 
   const fetchProducts = async () => {
@@ -61,7 +63,7 @@ const AdminProducts = () => {
       const method = editingProduct ? "PUT" : "POST";
       const url = editingProduct ? `${API_URL}/${editingProduct._id}` : API_URL;
 
-      await fetch(url, {
+      const res = await fetch(url, {
         method,
         headers: {
           "Content-Type": "application/json",
@@ -69,6 +71,8 @@ const AdminProducts = () => {
         },
         body: JSON.stringify(form)
       });
+
+      if (!res.ok) throw new Error("EL producto ya no existe o no se pudo actualizar");
 
       toast.success(`Producto ${editingProduct ? "actualizado" : "creado"}`);
 
@@ -78,11 +82,12 @@ const AdminProducts = () => {
         stock: "",
         category: "",
         minOrderQuantity: "",
-        unit: ""
+        unit: "",
+        image: ""
       });
 
       setEditingProduct(null);
-      setShowForm(false);
+      setEditModal(false);
       fetchProducts();
 
     } catch (err) {
@@ -92,9 +97,25 @@ const AdminProducts = () => {
 
   //para editar producto mostrar formulario con datos del producto
   const handleEdit = (product) => {
+
+    const exists = products.find(p => p._id === product._id);
+    if (!exists) {
+      toast.error("El producto ya no existe");
+      fetchProducts();
+      return;
+    }
+
     setEditingProduct(product);
-    setShowForm(true);
-    setForm(product);
+    setForm({
+      name: product.name || "",
+      price: product.price || "",
+      stock: product.stock || "",
+      category: product.category || "",
+      minOrderQuantity: product.minOrderQuantity || "",
+      unit: product.unit || "",
+      image: product.image || ""
+    })
+    setEditModal(true);
   };
 
   //Para eliminar un producto
@@ -106,11 +127,16 @@ const AdminProducts = () => {
 
     if (!confirm.isConfirmed) return;
 
-    await fetch(`${API_URL}/${id}`, {
+    const res = await fetch(`${API_URL}/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` }
     });
 
+    if (!res.ok){
+      toast.error("Error al eliminar producto");  
+      return;
+    } 
+    setProducts(prev => prev.filter(p => p._id !== id));
     toast.success("Producto eliminado");
     fetchProducts();
   };
@@ -118,7 +144,7 @@ const AdminProducts = () => {
 
   // Para cancelar edición o creación de producto
   const handleCancel = () => {
-    setShowForm(false);
+    setEditModal(false);
     setEditingProduct(null);
     setForm({
       name: "",
@@ -126,7 +152,8 @@ const AdminProducts = () => {
       stock: "",
       category: "",
       minOrderQuantity: "",
-      unit: ""
+      unit: "",
+      image: ""
     });
   }
 
@@ -141,7 +168,7 @@ const AdminProducts = () => {
         <button
           className="btn primary"
           onClick={() => {
-            setShowForm(true);
+            setEditModal(true);
             setEditingProduct(null);
             setForm({
               name: "",
@@ -149,7 +176,8 @@ const AdminProducts = () => {
               stock: "",
               category: "",
               minOrderQuantity: "",
-              unit: ""
+              unit: "",
+              image: ""
             });
           }}
         >
@@ -166,36 +194,61 @@ const AdminProducts = () => {
       </div>
 
       {/* FORM */}
-      {showForm && (
-        <form className="product-form" onSubmit={handleSubmit}>
+      {editModal && (
+        <div className="modal-overlay">
 
-          <input name="name" placeholder="Nombre" value={form.name} onChange={handleChange} />
-          <input name="price" placeholder="Precio" value={form.price} onChange={handleChange} />
-          <input name="stock" placeholder="Stock" value={form.stock} onChange={handleChange} />
-          <input name="category" placeholder="Categoría" value={form.category} onChange={handleChange} />
-          <input name="minOrderQuantity" placeholder="Pedido mínimo" value={form.minOrderQuantity} onChange={handleChange} />
+          <div className="modal">
 
-          <select name="unit" value={form.unit} onChange={handleChange}>
-            <option value="">Unidad</option>
-            <option value="kg">kg</option>
-            <option value="g">g</option>
-            <option value="l">l</option>
-            <option value="ml">ml</option>
-            <option value="caja">caja</option>
-            <option value="unidad">unidad</option>
-          </select>
+            <h3>{editingProduct ? "Editar producto" : "Crear producto"}</h3>
 
-          <div className="form-actions">
-            <button type="submit" className="btn primary">
-              {editingProduct ? "Actualizar" : "Crear"}
-            </button>
+            <form onSubmit={handleSubmit} className="product-form">
 
-            <button type="button" className="btn danger" onClick={handleCancel}>
-              Cancelar
-            </button>
+              <input name="name" value={form.name} onChange={handleChange} placeholder="Nombre" />
+              <input name="price" value={form.price} onChange={handleChange} placeholder="Precio" />
+              <input name="stock" value={form.stock} onChange={handleChange} placeholder="Stock" />
+
+              <select name="category" value={form.category} onChange={handleChange}>
+                <option value="">Categoría</option>
+                <option value="fruta">Fruta</option>
+                <option value="verdura">Verdura</option>
+                <option value="lácteo">Lácteo</option>
+                <option value="cereal">Cereal</option>
+                <option value="bebida">Bebida</option>
+                <option value="panadería">Panadería</option>
+                <option value="condimento">Condimento</option>
+              </select>
+
+              <select name="unit" value={form.unit} onChange={handleChange}>
+                <option value="">Unidad</option>
+                <option value="kg">kg</option>
+                <option value="g">g</option>
+                <option value="l">l</option>
+                <option value="ml">ml</option>
+                <option value="caja">caja</option>
+                <option value="unidad">unidad</option>
+              </select>
+
+              <input name="minOrderQuantity" value={form.minOrderQuantity} onChange={handleChange} placeholder="Pedido mínimo" />
+              <input name="image" value={form.image} onChange={handleChange} placeholder="URL imagen" />
+
+              <div className="form-actions">
+                <button type="submit" className="btn primary">
+                  {editingProduct ? "Actualizar" : "Crear"}
+                </button>
+
+                <button
+                  type="button"
+                  className="btn danger"
+                  onClick={() => setEditModal(false)}
+                >
+                  Cancelar
+                </button>
+              </div>
+
+            </form>
+
           </div>
-
-        </form>
+        </div>
       )}
 
       {/* TABLE */}

@@ -1,16 +1,36 @@
-# React + Vite
+# 🥬 Frutería B2B - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descripción
 
-Currently, two official plugins are available:
+Este es el frontend de una aplicación web B2B para la gestión de una frutería. Permite a los usuarios empresariales navegar por un catálogo de productos, gestionar un carrito de compra y realizar pedidos. También incluye un panel de administración para la gestión de productos, usuarios y pedidos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación está diseñada con enfoque B2B, interfaz responsive y control de acceso por roles (usuario / admin).
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS
+- React Router
+- Context API (gestión de estado)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+src/
+│
+├── api/          # Llamadas a la API (Axios)
+├── components/   # Componentes reutilizables
+├── pages/        # Páginas de la aplicación
+├── context/      # Estado global (auth, carrito, etc.)
+├── routes/       # Rutas protegidas y configuración de navegación
+├── styles/       # Estilos globales
+│
+├── App.jsx
+└── main.jsx

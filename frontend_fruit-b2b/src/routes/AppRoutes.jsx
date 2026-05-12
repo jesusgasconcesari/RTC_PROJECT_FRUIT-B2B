@@ -11,6 +11,7 @@ import AdminProducts from "../pages/AdminProducts/AdminProducts.jsx";
 import AdminOrders from "../pages/AdminOrders/AdminOrders.jsx";
 import MyOrders from "../pages/MyOrders/MyOrders.jsx";
 import OrderDetail from "../pages/OrderDetail/OrderDetail.jsx";
+import AdminUsers from "../pages/AdminUsers/AdminUsers.jsx";
 
 import AdminRoute from "./AdminRoute";
 import Home from "../pages/Home/Home.jsx";
@@ -61,8 +62,9 @@ const AppRoutes = () => {
                 <Route
                     path="/my-orders/:id"
                     element={
-                        
+                        <PrivateRoute>
                             <OrderDetail />
+                        </PrivateRoute>
                         
                     }
                 />
@@ -81,6 +83,14 @@ const AppRoutes = () => {
                     element={
                         <AdminRoute>
                             <AdminOrders />
+                        </AdminRoute>
+                    }
+                />
+                <Route
+                    path="/admin/users"
+                    element={
+                        <AdminRoute>
+                            <AdminUsers />
                         </AdminRoute>
                     }
                 />

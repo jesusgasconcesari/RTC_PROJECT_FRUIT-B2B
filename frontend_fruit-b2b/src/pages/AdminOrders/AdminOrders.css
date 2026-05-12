@@ -1,96 +1,208 @@
 .admin-orders-page {
   padding: var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--bg);
 }
 
 .admin-orders-title {
   margin-bottom: var(--space-lg);
+  color: var(--text);
 }
 
-/* CARD */
-.order-card {
+/* =======================
+   FILTROS
+======================= */
+.orders-filters {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.orders-filters input,
+.orders-filters select {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid #e5e5e5;
+  border-radius: var(--radius);
+  min-width: 220px;
+  background: var(--white);
+  color: var(--text);
+}
+
+/* =======================
+   CARD PEDIDO
+======================= */
+.order_card {
   background: var(--white);
   border-radius: var(--radius);
   padding: var(--space-md);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   box-shadow: var(--shadow);
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: var(--space-md);
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.order_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* =======================
+   CLIENTE / HEADER
+======================= */
+.order_header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text);
+}
+
+/* =======================
+   TOTAL
+======================= */
+.order_total {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  color: var(--text);
+}
+
+/* =======================
+   ACCIONES
+======================= */
+.order_actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.order_actions button {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.order_actions button:hover {
+  opacity: 0.85;
+}
+
+.order_actions button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* =======================
+   STATUS BADGE
+======================= */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.status-badge.pending {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.status-badge.confirmed {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.status-badge.shipped {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.status-badge.delivered {
+  background: blue;
+  color: var(--white);
+}
+
+.status-badge.cancelled {
+  background: var(--danger);
+  color: var(--white);
+}
+
+/* =======================
+   LINK DETALLE
+======================= */
+.detail_link {
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.detail_link:hover {
+  text-decoration: underline;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+  .order_card {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: var(--space-sm);
+  }
+
+  .order-total {
+    text-align: left;
+  }
+
+  .detail_link {
+    text-align: left;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: var(--white);
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  width: 400px;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-/* HEADER */
-.order-header {
+.modal input {
+  padding: 8px;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+}
+
+.modal-actions {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-/* TOTAL */
-.order-total {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* ACTIONS */
-.order-actions {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
   margin-top: var(--space-sm);
-  flex-wrap: wrap;
-}
-
-.order-actions button {
-  background: var(--primary);
-}
-
-.order-actions button:hover {
-  opacity: 0.85;
-}
-
-/* STATUS BADGE */
-.status-badge {
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/* estados */
-.status-badge.pending {
-  background: #ccc;
-}
-
-.status-badge.confirmed {
-  background: #2196f3;
-  color: white;
-}
-
-.status-badge.shipped {
-  background: orange;
-}
-
-.status-badge.delivered {
-  background: green;
-  color: white;
-}
-
-.status-badge.cancelled {
-  background: red;
-  color: white;
-}
-
-/* LINK */
-.detail-link {
-  margin-top: var(--space-sm);
-  text-align: right;
-  font-size: 14px;
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.detail-link:hover {
-  text-decoration: underline;
 }

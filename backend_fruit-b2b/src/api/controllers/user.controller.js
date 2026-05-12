@@ -1,5 +1,6 @@
 import { User } from '../models/User.js';
 import bcrypt from 'bcrypt';
+import { Order } from '../models/Order.js';
 
 //ver todos los usuarios (solo admin)
 export const getAllUsers = async (req, res) => {
@@ -49,7 +50,13 @@ export const deleteUser = async (req, res) => {
         if (!user) {
             return res.status(404).json({ message: 'Usuario no encontrado' });
         }
-        res.json({ message: 'Usuario eliminado' });
+        await Order.deleteMany({
+            user: req.params.id
+        });
+
+        res.json({
+            message: 'Usuario y pedidos eliminados'
+        });
     } catch (error) {
         res.status(500).json({ message: 'Error al eliminar usuario', error });
     }

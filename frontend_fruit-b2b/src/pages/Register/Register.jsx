@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { registerUser } from "../../api/auth";
+import { registerUser, loginUser } from "../../api/auth";
+import { AuthContext } from "../../context/AuthContext";
+
 import "./Register.css";
 
 
 
 const Register = () => {
     const navigate = useNavigate();
+    const { login } = useContext(AuthContext);
 
     const [form, setForm] = useState({
         name: "",
@@ -31,7 +34,14 @@ const Register = () => {
         setError("");
         try {
             await registerUser(form);
-            navigate("/login");
+
+            const loginResponse = await loginUser(form.email, form.password);
+
+            console.log(loginResponse);
+
+            login(loginResponse.user, loginResponse.token);
+
+            navigate("/products");
         } catch (err) {
             setError(err.message || "Registration failed");
         }

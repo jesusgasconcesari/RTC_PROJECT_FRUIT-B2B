@@ -1,0 +1,163 @@
+/* src/pages/AdminUsers/AdminUsers.css */
+
+.admin-users-page {
+  padding: var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--bg);
+}
+
+.admin-users-title {
+  margin-bottom: var(--space-lg);
+  color: var(--text);
+}
+
+/* =======================
+   FILTROS
+======================= */
+
+.users-filters {
+  margin-bottom: var(--space-lg);
+}
+
+.users-filters input {
+  width: 100%;
+  max-width: 400px;
+
+  padding: var(--space-sm) var(--space-md);
+
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+
+  background: var(--white);
+  color: var(--text);
+}
+
+/* =======================
+   USER CARD
+======================= */
+
+.user-card {
+  background: var(--white);
+
+  border-radius: var(--radius);
+
+  padding: var(--space-md);
+
+  margin-bottom: var(--space-sm);
+
+  box-shadow: var(--shadow);
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+
+  gap: var(--space-md);
+
+  align-items: center;
+
+  transition: 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-2px);
+}
+
+/* =======================
+   INFO
+======================= */
+
+.user-info strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.user-info p {
+  margin: 4px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* =======================
+   ROLE
+======================= */
+
+.user-role {
+  display: flex;
+  justify-content: center;
+}
+
+.role-badge {
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.role-badge.admin {
+  background: var(--danger);
+  color: var(--white);
+}
+
+.role-badge.client {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* =======================
+   ACTIONS
+======================= */
+
+.user-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.user-actions button {
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: var(--radius);
+
+  background: var(--primary);
+  color: var(--white);
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.user-actions button:hover {
+  opacity: 0.85;
+}
+
+.user-actions .danger {
+  background: var(--danger);
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media (max-width: 768px) {
+
+  .user-card {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .user-role {
+    justify-content: flex-start;
+  }
+
+  .user-actions {
+    justify-content: flex-start;
+  }
+
+}
