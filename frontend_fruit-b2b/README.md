@@ -1,6 +1,6 @@
-# 🥬 Frutería B2B - Frontend
+#  Fruit B2B - Frontend
 
-## 📖 Descripción
+##  Descripción
 
 Este es el frontend de una aplicación web B2B para la gestión de una frutería. Permite a los usuarios empresariales navegar por un catálogo de productos, gestionar un carrito de compra y realizar pedidos. También incluye un panel de administración para la gestión de productos, usuarios y pedidos.
 
@@ -8,7 +8,7 @@ La aplicación está diseñada con enfoque B2B, interfaz responsive y control de
 
 ---
 
-## 🧰 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - React
 - Vite
@@ -20,12 +20,12 @@ La aplicación está diseñada con enfoque B2B, interfaz responsive y control de
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```bash
 src/
 │
-├── api/          # Llamadas a la API (Axios)
+├── api/          # Llamadas a la API 
 ├── components/   # Componentes reutilizables
 ├── pages/        # Páginas de la aplicación
 ├── context/      # Estado global (auth, carrito, etc.)
