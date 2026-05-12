@@ -1,4 +1,4 @@
-<!-- #  Fruit B2B - Full Stack Web Application
+ #  Fruit B2B - Full Stack Web Application
 
 ##  Descripción
 
@@ -89,12 +89,3 @@ El proyecto está dividido en dos carpetas principales:
 - Backend: https://rtc-project-fruit-b2b.onrender.com
 
 ---
-
-
-##  Instalación y ejecución
-
-### Backend
-```bash
-cd backend
-npm install
-npm run dev
