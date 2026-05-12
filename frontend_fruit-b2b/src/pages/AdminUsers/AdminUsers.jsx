@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 import "./AdminUsers.css";
 
-const API_URL = "/api/users";
+const API_URL = "https://rtc-project-fruit-b2b.onrender.com/api/users";
 
 const AdminUsers = () => {
   const { token, user: currentUser } = useContext(AuthContext);

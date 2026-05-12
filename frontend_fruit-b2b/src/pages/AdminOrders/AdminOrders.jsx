@@ -8,7 +8,7 @@ import { useMemo } from "react";
 import './AdminOrders.css';
 
 
-const API_URL = "/api/orders/admin";
+const API_URL = "https://rtc-project-fruit-b2b.onrender.com/api/orders/admin";
 
 // Admin,admin@test.com,admin123,Fruteria Central,B00000000,Avenida Principal,admin
 

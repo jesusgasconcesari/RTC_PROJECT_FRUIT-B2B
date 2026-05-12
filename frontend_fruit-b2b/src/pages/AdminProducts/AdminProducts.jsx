@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import { toast } from 'react-toastify';
 import "./AdminProducts.css";
 
-const API_URL = "/api/products";
+const API_URL = "https://rtc-project-fruit-b2b.onrender.com/api/products";
 
 const AdminProducts = () => {
   const { token } = useContext(AuthContext);
