@@ -1,6 +1,6 @@
-<!-- # 🥬 Fruit B2B - Full Stack Web Application
+<!-- #  Fruit B2B - Full Stack Web Application
 
-## 📖 Descripción
+##  Descripción
 
 Este proyecto es una aplicación web full stack desarrollada como proyecto final del programa **Rock{TheCode}**. Se trata de una plataforma B2B para la gestión de una frutería, donde empresas pueden registrarse, comprar productos, gestionar pedidos y realizar seguimiento del estado de sus compras.
 
@@ -8,13 +8,13 @@ Incluye un sistema completo de administración para gestionar productos, usuario
 
 ---
 
-## 🎯 Objetivo del proyecto
+##  Objetivo del proyecto
 
 El objetivo principal es simular una aplicación real de comercio B2B, aplicando una arquitectura full stack moderna con autenticación, gestión de roles y operaciones CRUD completas.
 
 ---
 
-## 🧰 Stack tecnológico
+##  Stack tecnológico
 
 ### Frontend
 - React
@@ -33,7 +33,7 @@ El objetivo principal es simular una aplicación real de comercio B2B, aplicando
 
 ---
 
-## 🏗️ Estructura del proyecto
+##  Estructura del proyecto
 
 El proyecto está dividido en dos carpetas principales:
 
@@ -42,9 +42,9 @@ El proyecto está dividido en dos carpetas principales:
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-### 👤 Autenticación
+###  Autenticación
 - Registro de usuarios B2B
 - Login con JWT
 - Protección de rutas
@@ -52,7 +52,7 @@ El proyecto está dividido en dos carpetas principales:
 
 ---
 
-### 🛒 Usuario B2B
+###  Usuario B2B
 - Visualización de catálogo de productos
 - Búsqueda y filtros
 - Añadir productos al carrito
@@ -63,7 +63,7 @@ El proyecto está dividido en dos carpetas principales:
 
 ---
 
-### 🛠️ Panel de administración
+###  Panel de administración
 - Gestión de productos (CRUD completo)
 - Gestión de usuarios (CRUD completo)
 - Gestión de pedidos:
@@ -73,7 +73,7 @@ El proyecto está dividido en dos carpetas principales:
 
 ---
 
-## 🧱 Arquitectura
+##  Arquitectura
 
 - Frontend basado en componentes reutilizables + Context API
 - Backend con arquitectura MVC (Models / Controllers / Routes)
@@ -83,15 +83,15 @@ El proyecto está dividido en dos carpetas principales:
 
 ---
 
-## 🌐 Deploy
+##  Deploy
 
-- Frontend: *(pendiente de despliegue)*
-- Backend: *(pendiente de despliegue)*
+- Frontend: https://rtc-project-fruit-b2b.vercel.app/
+- Backend: https://rtc-project-fruit-b2b.onrender.com
 
 ---
 
 
-## ⚙️ Instalación y ejecución
+##  Instalación y ejecución
 
 ### Backend
 ```bash

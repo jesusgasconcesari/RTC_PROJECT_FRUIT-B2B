@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink to="/">
 
                     <img
-                        src="../../../favicon.png"
+                        src="/favicon.png"
                         alt="Logo"
                         className="logo-image"
                     />
