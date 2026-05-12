@@ -1,4 +1,4 @@
-const API_URL = "/api/products/";
+const API_URL = "https://rtc-project-fruit-b2b.onrender.com/api/products/";
 
 export const getProducts = async (token) => {
     try {
